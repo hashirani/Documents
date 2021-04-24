@@ -1,0 +1,98 @@
+.recent{
+    padding: 30px;
+    position: relative;
+    background: rgba(190, 178, 178, 0.5);
+}
+.work-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.work-row:not(:last-child){
+    margin-bottom: 70px;
+}
+
+.word-card{
+    width: 100%;
+    min-width: 300px;
+}
+
+.word-card h4{
+    color: rgba(237, 55, 110, 0.932);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.word-card h1{
+    color: rgb(17, 46, 65);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.word-card p{
+    color: rgb(77, 81, 83);
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.word-card button{
+    color: rgb(77, 81, 83);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border: none;
+    background-color: transparent;
+}
+button span{
+    font-weight: 900;
+    font-size: 30px;
+}
+.word-card button:hover{
+    color:  rgba(237, 55, 110, 0.932);
+}
+
+
+.word-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.mar{
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+   .recent{
+    padding:50px 150px 40px 100px;
+}
+    .work-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .work-row{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .work-row:not(:last-child){
+        margin-bottom: 100px;
+    }
+    
+    .word-card{
+        width: 40%;
+        max-width: 600px;
+    }
+    .word-card-content{
+        width: 100%;
+        margin: 5% 1% 0 5%;
+        
+    }
+    .word-card img{
+        width: 100%;
+        min-width: 400px;
+    }
+  }
+
+

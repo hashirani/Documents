@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Papaer Scissors</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="game-name">
+                <img src="images/logo.svg" alt="">
+
+            </div>
+
+
+            <div class="scoreBoard" id="score">
+                <h3 class="transform">
+                    score <span class="score-point" id="point"></span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="game-section" id="mainsection">
+           
+            <div class="finger paper" onclick="paper()">
+                <img src="images/icon-paper.svg" alt="paper">
+            </div>
+
+            <div class="finger scissors" onclick="scissors()">
+                <img src="images/icon-scissors.svg" alt="scissors">
+             </div>
+             <br>
+            <div class="finger rock" onclick="rock()">
+                <img src="images/icon-rock.svg" alt="rock">
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="result-box transform hidden" id="resultsection">
+
+            <div class="userResult">
+                <h2> You picked</h2>
+
+                <div class="finger rslt-paper hidden bigger"  id="userPaper">
+                    <img src="images/icon-paper.svg" alt="paper">
+                </div>
+    
+                <div class="finger rslt-scissors hidden bigger"  id="userScissors">
+                    <img src="images/icon-scissors.svg" alt="scissors">
+                 </div>
+
+                <div class="finger rslt-rock bigger hidden"  id="userRock">
+                    <img src="images/icon-rock.svg" alt="rock">
+                </div>
+
+            </div>
+            
+            <div class="show-decision">
+                <div class="result" id="results">
+                </div>
+                <button class="play-again" onclick="playAgain()">
+                    play again
+                </button>
+            </div>
+
+            <div class="computer-result">
+
+                <h2>She Picked</h2>
+
+                <div class="finger rslt-paper bigger hidden"  id="computerPaper">
+                    <img src="images/icon-paper.svg" alt="paper">
+                </div>
+    
+                <div class="finger rslt-scissors bigger hidden"  id="computerScissors">
+                    <img src="images/icon-scissors.svg" alt="scissors">
+                 </div>
+
+                <div class="finger bigger rslt-rock hidden"  id="computerRock">
+                    <img src="images/icon-rock.svg" alt="rock">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="rule" onclick="showRules()">
+            rules
+        </div>
+        <div class="new" onclick="newGame()">
+                new game
+        </div>
+       
+    
+
+        <div class="rules-bg height" id="rules">
+            <button class="close-button" onclick="closeRules()"> 
+                <i class="material-icons">close</i>
+            </button>
+            <div class="rule-section">
+                <div class="rule-content">
+                    <h1>
+                        If the player wins, they gain 1 point. If the she wins, the player loses one point.
+                    </h1>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+ <script src="js/main.js"> </script>
+</body>
+</html>

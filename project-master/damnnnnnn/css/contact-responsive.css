@@ -1,0 +1,98 @@
+    
+@media only screen and (max-width: 800px) {
+    .contact-header{
+        background: linear-gradient(to right, 
+                    rgba(28, 29, 29, 0.85) ,
+                    rgba(18, 19, 18, 0.85)),
+                    url(../img/contact-header.jpg);
+        background-attachment: fixed;
+        height: 70vh;
+        overflow: hidden;
+    }
+    .heading{
+        margin: 0 auto;
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        
+        font-weight: 900;
+        font-size: 50px;
+    
+    
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .contact-detail {
+        height: 85vh;
+        width: 100vw;
+        margin-left: 0px;
+
+    }
+
+    .contact-form{
+        display: flex;
+        margin-top: 20vh;
+    }
+    
+   
+    
+    .content h2{
+        font-size: 22px;
+        margin: 30px  0 0;
+    }
+    
+    
+    
+    .content p{
+        font-size: 20px;
+        font-weight: 300;
+        margin: 10px 0 0 30px;
+    
+    }
+    .form{
+        
+        width: 100vw;
+        height: 110vh;
+        padding-top: 2vh;
+        display: inline-block;
+    }
+    form{
+        margin-left: 0px;
+
+    }
+    
+   
+    input{
+        
+        padding: 15px;
+        
+    
+    }
+    .form label{
+        font-size: 20px;
+        
+    }
+    
+    input::placeholder{
+        
+        font-size: 16px;
+    }
+    
+    textarea::placeholder{
+        
+        font-size: 16px;
+    }
+    
+        
+}
+
+@media only screen and (max-width: 600px) {
+    .form{
+        
+        width: 100vw;
+        height: 80vh;
+        padding-top: 2vh;
+        display: inline-block;
+    }
+}

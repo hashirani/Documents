@@ -1,0 +1,87 @@
+
+
+
+*{
+   box-sizing: border-box; 
+}
+
+
+body{
+    background: url('image/bg-image.jpg') no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+}
+#date{
+    text-align: center;
+}
+button{
+    background-color: sandybrown;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#temp{
+    text-align: center;
+}
+#temp #temp-unit{
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+}
+#temp #temp-value{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+}
+ #temp  #climate{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+#loca{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+#sunset{ 
+     font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+#sunrise{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+p{
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+}
+img{
+  margin: 1rem;
+    width: 10%;
+    height: 10%;
+}
+/* main{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: slategray;
+    border-radius: 20px;
+    width: 360px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+} */

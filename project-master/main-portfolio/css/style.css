@@ -1,0 +1,278 @@
+/**************************************
+       making horizontal
+       ****************************/
+body{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    overflow: hidden;    
+    scroll-behavior: smooth;
+}
+.container {
+    width: 600vw;
+    height: 100vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+  -ms-overflow-style: none;
+
+
+  }
+  ::-webkit-scrollbar {
+    display:none;
+  }
+  
+  .section {
+    width:calc(100vw - 300px);
+    height: 100vh;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
+    overflow-x: hidden;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+  }
+.container {
+    vertical-align: middle;
+    overflow-x: scroll; 
+  }
+/************************************
+              main btn
+              ***********************/
+  .main-btn{
+    width:80px;
+    height: 40px;
+    color: white;
+    background: transparent;
+    border:1px solid #5ACF8C;
+    outline: none;
+    box-shadow: 1px 1px 1px white;
+}
+.btn-section{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.right-btn{margin-left: 10px;}
+.right-btn:hover{
+    transform: translateX(1px);
+    box-shadow: 1px 1px 2px white;
+}
+.right-btn:active{
+    transform: translateX(0px);
+    box-shadow: 0px 0px 0px white;
+}
+.left-btn:hover{
+    transform: translateX(-1px);
+    box-shadow: 1px 1px 2px white;
+}
+.left-btn:active{
+    transform: translateX(0px);
+    box-shadow: 0px 0px 0px white;
+}
+
+/****************************************
+        home
+        ****************************/
+
+.home{
+   
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    background: linear-gradient(
+        to right, 
+        rgba(58, 59, 59, 0.4),
+        rgba(92, 94, 93, 0.4)),
+        url(../img/bg-1.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: relative;
+}
+
+.home-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5ACF8C;
+    font-size: 30px;
+    /* font-weight: 300; */
+    
+}
+.home-content h1{
+    position: relative;
+}
+.home-content h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 4px;
+    background-color: #5ACF8C;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 300ms;
+}
+
+
+nav{
+    width: 300px;
+    position: fixed;
+    background: #232329;
+    height: 100vh;
+    padding: 100px 0px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+nav li a{
+    font-size: 12px;
+    list-style: none;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+nav li span{
+    color: rgb(68, 161, 57);
+    letter-spacing: 4px;
+    margin: 50px 0;
+    font-weight: 700;
+
+}
+
+.pg-count{
+    color: white;
+    width: 300px;
+    font-family: 'Odibee Sans';
+    padding: 30px 40px;
+    display: flex;
+    font-size: 700;
+    letter-spacing: 4px;
+}
+.active-pg{
+    color: rgb(68, 161, 57);
+}
+.line-div{
+    background-color: white;
+    width: 100px;
+    height: 3px;
+    margin: 7px 10px 0 10px;
+    
+}
+
+.about-me h1{
+    margin: 100px 30px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    width: 100px;
+    height: 10px;
+}
+.about-me h1 a{
+    color: white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/*********************************************
+                about
+                *****************************/
+.about{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(90, 94, 94, 0.637);
+    background: linear-gradient(
+        to right, 
+        rgba(58, 59, 59, 0.8),
+        rgba(92, 94, 93, 0.8)),
+        url(../img/bg-4.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 0 150px;
+    text-align: center;
+
+    
+}
+.about-content{
+    position: relative;
+}
+.about-content h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-content .intro{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.about-content span{
+    color: rgb(68, 161, 57);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    
+}
+.para-div{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+}
+.para{
+    width: 100%;
+    color: rgb(223, 217, 217);
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 20px;
+    font-weight: 700;
+    
+}
+.para-link{
+    color: rgb(68, 161, 57);
+    text-decoration: underline;
+}
+
+/*************************************
+               Projects
+               ***********************/
+.project{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(90, 94, 94, 0.637);
+    background: linear-gradient(
+                to right, 
+                rgba(58, 59, 59, 0.8),
+                rgba(92, 94, 93, 0.8)),
+                url(../img/bg-4.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 0 150px;
+    text-align: center;
+
+
+}

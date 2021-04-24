@@ -1,0 +1,170 @@
+
+:root{
+    --primary-color:#009688;
+    --header-color:#fff;
+    --body-bg:#fbe9e7;
+    --footer-bg:#fff;
+    --font-color:#333;
+    --symbol-dark:#f4511e;
+    --symbol-hover:#ff8a65;
+    --slider-circlr:#000;
+    --symbol-color:#ff7043;
+
+
+}
+[data-theme="dark"]{
+   --primary-color:#333; 
+   --header-color:#000;
+   --footer-bg:#000;
+   --font-color:#333;
+   --symbol-color:transparent;
+   --symbol-hover:#ff5722;
+   --slider-circlr:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width:100vw;
+    background-color:var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.calculator{
+    display: grid;
+    grid-template-rows:8% 25%  auto;
+    width: 300px;
+    height: 500px;
+    background-color:#fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
+}
+.calculator-header{
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+   display: flex;
+   justify-content: flex-end;
+   padding: 0 20px;
+   background-color:var(--header-color);
+}
+.calculator-body{
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    text-align: right;
+    background-color: #fbe9e7;
+}
+.calculator-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: var(--footer-bg);
+  
+}
+.calculator-footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500px;
+    color: var(--font-color);
+    width: 50px;
+    height: 50px;
+    transition: 0.4s all;
+}
+.calculator-footer div.symbol{
+    background-color: var(--symbol-color);
+    color: #fff;
+}
+.calculator-footer div.symbol-dark{
+    background-color: var(--symbol-dark);
+    color: #fff;
+}
+.calculator-footer div:hover{
+    cursor: pointer;
+}
+.calculator-footer div:hover{
+    background-color: #e5e5e5;
+}
+.calculator-footer div.symbol:hover{
+    background-color: var(--symbol-hover);
+}
+.calculator-footer div.symbol-dark:hover{
+    background-color: var(--symbol-dark);
+}
+
+/*slider switch case*/
+.them-switch-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.them-switch-wrapper em{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch{
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 50px;
+}
+
+.theme-switch input{
+    display: none;
+}
+
+.slider{
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+
+}
+
+.slider:before{
+    background-color:var(--slider-circlr);
+    content: "";
+    bottom: -5px;
+    height: 26px;
+    /*left:0px;*/
+    right: 25px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+input:checked + .slider{
+ background-color: #66bb6a;   
+}
+input:checked + .slider:before{
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

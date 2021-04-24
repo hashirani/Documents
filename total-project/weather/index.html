@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Global Weather</title>
+</head>
+<body>
+    <from>
+        <p id="date">Date</p>
+        <div id="container">
+       <input type="search" id="input" placeholder="Enter your City Name" required autocomplete="off" />
+   
+        <br><br>
+         <button id="button">Search</button>
+        </div>
+        </from>
+
+<main id="app-container">
+    
+    <div id="loca">
+
+       
+        <p>--------</p>
+    </div>
+    <div id="temp">
+        <img id="temp-icon" src="image/snow.png" alt="">
+        <p><span id="temp-value"></span><span id="temp-unit">&#8451;</span></p>
+        <div id="climate">
+            <p></p>
+           
+        </div>
+        <div>
+            <p>Sunrise:<span id="sun-rise"></span></p>
+       
+       
+            <p>Sunset:<span id="sun-set"></span></p>
+     
+    </div>
+   
+
+</main>
+   <script src="index.js"></script> 
+</body>
+</html>
